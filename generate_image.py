@@ -1,5 +1,4 @@
 from PIL import Image, ImageDraw, ImageFont
-from utils import *
 
 
 def create_empty_background():
@@ -37,5 +36,3 @@ def generate_image(data):
             int(7 * background_h / 8 - text_h / 2)), text, font=font, fill=(255, 255, 255, 255))
     result = Image.alpha_composite(background, img_text)
     result.save('images/result.png', 'PNG')
-    print(2)
-

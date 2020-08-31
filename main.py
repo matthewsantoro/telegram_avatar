@@ -1,13 +1,12 @@
-from telethon import TelegramClient, sync
+from telethon import TelegramClient
 from config import *
 from telethon.tl.functions.photos import UploadProfilePhotoRequest, DeletePhotosRequest
-from datetime import datetime
 from generate_image import *
 from weather import *
 from utils import *
 
 
-client = TelegramClient('avatar', api_id, api_hash)
+client = TelegramClient('avatar', TELEGRAM_API_ID, API_HASH)
 client.start()
 
 prev_update_time = ""
@@ -21,7 +20,3 @@ while True:
         client(DeletePhotosRequest(client.get_profile_photos('me')))
         file = client.upload_file(f"images/result.png")
         client(UploadProfilePhotoRequest(file))
-
-
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/

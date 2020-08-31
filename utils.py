@@ -10,4 +10,4 @@ def time_has_changed(prev_time):
 
 
 def ts_to_date(timestamp):
-   return datetime.fromtimestamp(timestamp)
+    return datetime.fromtimestamp(timestamp)
