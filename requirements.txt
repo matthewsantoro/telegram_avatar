@@ -7,7 +7,6 @@ image==1.5.32
 numpy==1.19.1
 opencv-python==4.4.0.42
 Pillow==7.2.0
-pkg-resources==0.0.0
 pyaes==1.6.1
 pyasn1==0.4.8
 pytz==2020.1
