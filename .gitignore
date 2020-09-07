@@ -5,7 +5,7 @@ __pycache__/
 .Procfile.swp
 avatar.session
 name.session
-
+.idea/
 
 # C extensions
 *.so
