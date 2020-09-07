@@ -2,6 +2,10 @@
 __pycache__/
 *.py[cod]
 *$py.class
+.Procfile.swp
+avatar.session
+name.session
+
 
 # C extensions
 *.so
